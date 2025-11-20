@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Redirect if not logged in -->
+  <script>
+    if (localStorage.getItem("isAdmin") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>🎓 Student Management System</h1>
+
+      <div>
+        <button id="logoutBtn">Logout</button>
+        <button id="themeToggle" class="dark-btn">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <!-- Student Form -->
+    <form id="studentForm">
+      <input type="hidden" id="studentId" />
+
+      <input type="text" id="name" placeholder="Student Name" required />
+      <input type="email" id="email" placeholder="Email Address" required />
+      <input type="number" id="age" placeholder="Age" required />
+
+      <button type="submit">Save Student</button>
+    </form>
+
+    <!-- Student Table -->
+    <h2>Student List</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- Data loads from JS -->
+      </tbody>
+    </table>
+
+  </div>
+
+  <!-- LOAD SCRIPT.JS (VERY IMPORTANT) -->
+  <script src="script.js"></script>
+
+</body>
+</html>
