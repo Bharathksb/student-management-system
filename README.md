@@ -91,3 +91,21 @@ spring.jpa.hibernate.ddl-auto=update
 
 Run the application:
 ➡️ StudentManagementApplication.java
+
+
+
+
+## 📸 Screenshots
+
+### 🔐 Login Page
+![Login Page](assets/screenshot/Logindetails.png)
+
+### 🏠 Dashboard (Light Mode)
+![Dashboard Light](assets/screenshot/DashBoard.png)
+
+### ➕ Add Student
+![Add Student](assets/screenshot/Dashboardadding.png)
+
+### 🌙 Dashboard (Dark Mode)
+![Dashboard Dark](assets/screenshot/DashBoardDarkmode.png)
+
